@@ -1,0 +1,154 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 22, 2024, 2:53:59 PM
+    Author     : thanh
+*/
+:root {
+    font-size: 16px;
+    font-family: "Archivo Narrow", sans-serif;
+    --text-primary: #eccfc5;
+    --text-secondary: #f9672c;
+    --bg-primary: #401d19;
+    --bg-secondary: #250804;
+    --bg-third: #863b32;
+}
+main{
+    margin-left: 5rem;
+    width: calc(100vw - 5rem);
+    display: flex;
+    justify-content: center;
+}
+td{
+    color:white;
+    font-size: 20px;
+}
+.top-part{
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.top-part-sub1{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+.top-part-sub1 img{
+    width: 100%;
+}
+.top-part-sub2{
+    position: absolute;
+    color:var(--text-secondary);
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(30px);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    top:15vh;
+    z-index: 10;
+    border-radius: 20px;
+}
+.main-part{
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(30px);
+    height: 80vh;
+
+}
+.filter-part{
+    margin: 20px;
+}
+.filter-part form{
+    display: flex;
+    justify-content: end;
+    gap:10px;
+}
+.filter-part form nav{
+    color: white;
+    font-size: 20px;
+    margin: auto 0;
+}
+.filter-part form select{
+    font-family: "Archivo Narrow", sans-serif;
+    background-color: transparent;
+    color: var(--text-secondary);
+    font-size: 20px;
+    border: none;
+    padding: 5px;
+    margin: 20px  5px;
+    border-radius: 5px;
+}
+.filter-part form select:hover{
+    background-color: rgba(236,237,107,0.2);
+    border-radius: 5px;
+}
+.table-song{
+    position: relative;
+    height:90% ;
+    width: 90vw;
+    margin: 0 auto;
+    overflow: scroll;
+}
+.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: yellow;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.stable{
+    width: 100%;
+    border: none;
+    color: white;
+}
+.stable tr td{
+    border: 0px solid black;
+    padding: 10px 10px
+}
+
+tr:nth-child(even){
+    background-color: var(--bg-secondary);
+}
+tr td:first-child{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+tr td:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+tr:hover {
+    background-color: var(--text-primary);
+}
+tr:hover td {
+    color: black;
+}
+
+.cellArtist{
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 3px;
+}
+.cellArtist:hover{
+    background-color: rgba(2, 48, 71, 0.6);
+    color: white;
+    text-decoration: none;
+}
+.play-mini{
+    color:white;
+    text-align: center;
+    vertical-align: central;
+
+}
+
+.play-mini:hover i{
+    background-color: transparent;
+}
+
+

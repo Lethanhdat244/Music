@@ -1,0 +1,161 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 14, 2024, 2:10:04 AM
+    Author     : thanh
+*/
+
+
+:root {
+    font-size: 16px;
+    --text-primary: #eccfc5;
+    --text-secondary: #f9672c;
+    --bg-primary: #401d19;
+    --bg-secondary: #250804;
+    --bg-third: #863b32;
+}
+
+#music-control-bar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left:5rem;
+    height: 60px;
+    padding: 0.2rem;
+    background-color: rgba(236, 207, 197, 0.6);
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.first-part{
+    width: 400px;
+}
+.mid-part{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.last-part{
+    width: 400px;
+    display: flex;
+}
+.mid-part-sub1{
+}
+.mid-part-sub2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.player-track-meta {
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+}
+.player-track-meta p {
+    margin: 0;
+    font-size: 20px;
+    color: var(--bg-secondary);
+    font-weight: 700;
+}
+.player-track-meta span {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 2px;
+    position: relative;
+    top: 1px;
+    color: var(--bg-primary);
+}
+
+
+#progress-bar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#progress-bar {
+    flex-grow: 1;
+    height: 4px;
+    position: relative;
+    border-radius: 4em;
+    transition: 200ms ease;
+    background-color: rgba(236, 207, 197, 0.8);
+    backdrop-filter: blur(30px);
+}
+
+#progress {
+    height: 100%;
+    width: 0;
+    background-color: rgba(64, 29, 25, 0.6);
+    backdrop-filter: blur(30px);
+    border-top-left-radius:     4em;
+    border-bottom-left-radius:  4em;
+    transition: 200ms ease;
+}
+
+#progress-bar:hover, #progress:hover {
+    height: 10px;
+}
+#volume-control{
+    padding: 0;
+    margin: auto;
+    width: 5rem;
+}
+.player-time{
+    margin: 0 10px;
+    color: var(--bg-secondary);
+    font-size: 14px	;
+    font-family: monospace;
+}
+.media-btn{
+    font-size: 30px;
+    color: var(--bg-secondary);
+    transition: 200ms ease;
+    padding: 5px;
+}
+#music-control-bar button{
+    background-color: transparent;
+    border: none;
+}
+.uil-play{
+    font-size: 30px;
+}
+.uil-pause{
+    font-size: 30px;
+}
+.uil-pause:hover, .uil-play:hover {
+    border-radius: 100px;
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+.media-btn:active{
+    border-radius: 100px;
+    color: var(--text-secondary);
+}
+.uil-pause:active, .uil-play:active{
+    background-color: var(--text-primary);
+    color: var(--text-secondary);
+}
+.uil-repeat {
+    font-size: 16px;
+    font-weight: bold;
+}
+.uil-volume{
+    font-size: 20px;
+}
+.uil-volume, .uil-repeat{
+    margin-top:  auto;
+    margin-bottom:   auto;
+    color: var(--bg-secondary);
+}
+.player-volume-container {
+    display: flex;
+    width: 15%;
+    transition: 1000ms ease;
+}

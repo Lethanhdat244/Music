@@ -1,0 +1,90 @@
+:root {
+    font-size: 16px;
+    --text-primary: #ECCFC5 ;
+    --text-secondary: #F9672C ;
+    --bg-primary: #401D19 ;
+    --bg-secondary: #250804;
+}
+
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+/* navbar config */
+.navbar {
+    /* box */
+    display: flex;
+    justify-content: center;
+    /* color */
+    background-color: rgba(64, 29, 25, 0.6);
+    backdrop-filter: blur(12px);
+    width: 5em;
+    height: 100vh;
+    position: fixed;
+    /* add animation open  for navbar  */
+    transition: width 200ms ease;
+}
+.navbar:hover{
+    width: 15rem;
+    justify-content: center;
+}
+
+.nav-icon {
+    font-size: 2rem;
+    color: #b6b6b6;
+}
+.nav-text{
+    color: var(--text-primary);
+    display: none;
+    transition: width 200ms ease;
+}
+.navbar:hover .nav-text{
+    display: flex;
+    align-items: center;
+    opacity: 1;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+.navbar li:last-child{
+    margin-top: auto;
+}
+
+.navbar ul li {
+    /* box */
+    display: flex;
+    justify-content:space-between;
+    gap: 30px;
+    /* padding margin */
+    list-style: none;
+    padding: 20px;
+    /* other */
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+}
+
+.navbar ul li i,.navbar ul li nav {
+    color: var(--text-secondary);
+    opacity: 0.5;
+}
+
+.navbar ul li:hover {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+.navbar ul li:hover i,.navbar ul li:hover nav {
+    color: var(--text-secondary);
+    opacity: 1;
+}
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}

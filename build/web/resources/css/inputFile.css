@@ -1,0 +1,25 @@
+/* 
+    Created on : Jan 11, 2024, 10:43:42 PM
+    Author     : thanh
+*/
+
+:root {
+    font-size: 16px;
+    --text-primary: #eccfc5;
+    --text-secondary: #f9672c;
+    --bg-primary: #401d19;
+    --bg-secondary: #250804;
+    --bg-third: #863b32;
+}
+
+main{
+    margin-left: 5rem;
+    padding: 1rem;
+}
+.formMp3{
+    border-radius: 20px;
+    margin-left: 2rem;
+    padding: 12px 1rem 200px 1rem;
+    background-color: var(--text-primary);
+}
+
